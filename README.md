@@ -1,5 +1,7 @@
 # Touchless Screen
 
+# Gesture-Controlled Mouse Interface
+
 A real-time hand gesture-based mouse control system using a webcam, `MediaPipe`, and virtual input events via `uinput`.
 
 ## Components
@@ -22,21 +24,11 @@ Interprets hand landmark positions as mouse events:
 - MediaPipe
 - python-uinput (Linux only)
 
-## Usage
-1. Ensure webcam access.
-2. Run `main.py`.
-3. Use your hand in front of the camera:
-   - Move index finger to move the cursor.
-   - Pinch thumb and index finger to click and drag.
-   - Spread fingers apart to release drag.
+## Setup
 
-## Notes
-- Designed for 1920x1080 screens. Edit `SCREEN_WIDTH/HEIGHT` in `gesture_controller.py` to match yours.
-- Runs only on Linux due to `uinput`.
-- Press `ESC` to quit.
+### 1. Install dependencies
+```bash
+chmod +x setup.sh
+./setup.sh
 
-## Limitations
-- No multi-hand interaction.
-- Accuracy degrades in poor lighting or occlusion.
-- Not tested for accessibility use cases.
 
